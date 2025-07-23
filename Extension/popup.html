@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div id="title">Loading title...</div>
+      <button id="checkBtn">Check News</button>
+      <div id="result"></div>
+
+      <!-- Google Fact Check Section (ascuns inițial) -->
+      <div id="hintSection" style="display: none;">
+        <label for="factHint"><strong>Check similar news through Google Fact Check:</strong></label>
+        <textarea id="factHint" rows="2" placeholder="Generating..."></textarea>
+        <small>Note: the statement should be short and simple.</small>
+        <button id="searchFact" style="margin-top: 6px;">Search</button>
+
+        <div id="factCheckResults"></div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
