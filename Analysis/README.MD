@@ -55,7 +55,6 @@ Each model was tested **with and without** features. In classical models, both v
 
 > All BiLSTM models were GPU-accelerated (CUDA + cuDNN), with dropout=0.3 and early stopping based on validation F1-score.
 
----
 
 ## 6. Results and Final Model
 
