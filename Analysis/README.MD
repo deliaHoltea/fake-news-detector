@@ -46,9 +46,9 @@ Each model was tested **with and without** features. In classical models, both v
 
 | Model | Embedding | Without Features | With Features | 
 |-------|-----------|------------------|---------------|
-| **Logistic Regression** | TF-IDF, W2V-avg, GloVe-avg, BERT-avg | ✔ | ✔ |
-| **Decision Tree** | same | ✔ | ✔ |
-| **SVC** | same | ✔ | ✔ | 
+| **Logistic Regression** | TF-IDF, W2V-avg, GloVe-avg, BERT-avg | `logistic_regression.ipynb` | `logistic_regression.ipynb` |
+| **Decision Tree** | TF-IDF, W2V-avg, GloVe-avg, BERT-avg | `decision_tree.ipynb` | `decision_tree.ipynb` |
+| **SVC** | TF-IDF, W2V-avg, GloVe-avg, BERT-avg | `support_vector_classifier.ipynb` | `support_vector_classifier.ipynb` | 
 | **BiLSTM (RNN)** | **Word2Vec** | `w2v_bilstm_16.ipynb`, `w2v_bilstm_32.ipynb` | `w2v_bilstm_16_features.ipynb`, `w2v_bilstm_32_features.ipynb` | 
 |  | **GloVe** | `glove_bilstm_16.ipynb`, `glove_bilstm_32.ipynb` | `glove_bilstm_16_features.ipynb`, `glove_bilstm_32_features.ipynb` | 
 |  | **BERT** | `bert_bilstm_16.ipynb`, `bert_bilstm_32.ipynb` | `bert_bilstm_16_features.ipynb`, `bert_bilstm_32_features.ipynb` | 
