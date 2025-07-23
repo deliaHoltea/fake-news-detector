@@ -2,15 +2,11 @@
 
 This directory contains the entire research pipeline: from raw dataset processing and linguistic feature extraction, to training and comparing classical and neural models using various embeddings, with and without additional features.
 
----
-
 ## 1. Dataset
 
 **WELFake** source: https://www.kaggle.com/datasets/MIKEDUD/WELFake
 
 I've followed the WELFake dataset authors’ paper as a starting point for extracting linguistic and stylistic features, and extended their methodology.
-
----
 
 ## 2. Preprocessing (`preprocess.ipynb`)
 
@@ -21,7 +17,6 @@ Steps:
 4. Remove stopwords and punctuation
 5. Lemmatization + POS tagging (NLTK)
 6. Outlier removal using Z-score
----
 
 ## 3. Feature Extraction (`features_extraction.ipynb`)
 
@@ -36,8 +31,6 @@ Filtering done via:
 - Pearson correlation
 - Mutual Information
 
----
-
 ## 4. Text Representation (Embeddings)
 
 | Embedding | Implementation |
@@ -46,8 +39,6 @@ Filtering done via:
 | **Word2Vec** (CBOW, 300d) | gensim |
 | **GloVe** (6B, 100d) | pretrained |
 | **BERT** (`bert-base-uncased`) | HuggingFace Transformers |
-
----
 
 ## 5. Models and Notebooks
 
