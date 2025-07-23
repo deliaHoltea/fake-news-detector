@@ -44,14 +44,14 @@ Filtering done via:
 
 Each model was tested **with and without** features. In classical models, both variants are included in the same notebook.
 
-| Model | Embedding | Without Features | With Features | Batch |
-|-------|-----------|------------------|---------------|-------|
-| **Logistic Regression** | TF-IDF, W2V-avg, GloVe-avg, BERT-avg | ✔ | ✔ | — |
-| **Decision Tree** | same | ✔ | ✔ | — |
-| **SVC** | same | ✔ | ✔ | — |
-| **BiLSTM (RNN)** | **Word2Vec** | `w2v_bilstm_16.ipynb`, `w2v_bilstm_32.ipynb` | `w2v_bilstm_16_features.ipynb`, `w2v_bilstm_32_features.ipynb` | 16 / 32 |
-|  | **GloVe** | `glove_bilstm_16.ipynb`, `glove_bilstm_32.ipynb` | `glove_bilstm_16_features.ipynb`, `glove_bilstm_32_features.ipynb` | 16 / 32 |
-|  | **BERT** | `bert_bilstm_16.ipynb`, `bert_bilstm_32.ipynb` | `bert_bilstm_16_features.ipynb`, `bert_bilstm_32_features.ipynb` | 16 / 32 |
+| Model | Embedding | Without Features | With Features | 
+|-------|-----------|------------------|---------------|
+| **Logistic Regression** | TF-IDF, W2V-avg, GloVe-avg, BERT-avg | ✔ | ✔ |
+| **Decision Tree** | same | ✔ | ✔ |
+| **SVC** | same | ✔ | ✔ | 
+| **BiLSTM (RNN)** | **Word2Vec** | `w2v_bilstm_16.ipynb`, `w2v_bilstm_32.ipynb` | `w2v_bilstm_16_features.ipynb`, `w2v_bilstm_32_features.ipynb` | 
+|  | **GloVe** | `glove_bilstm_16.ipynb`, `glove_bilstm_32.ipynb` | `glove_bilstm_16_features.ipynb`, `glove_bilstm_32_features.ipynb` | 
+|  | **BERT** | `bert_bilstm_16.ipynb`, `bert_bilstm_32.ipynb` | `bert_bilstm_16_features.ipynb`, `bert_bilstm_32_features.ipynb` | 
 
 > All BiLSTM models were GPU-accelerated (CUDA + cuDNN), with dropout=0.3 and early stopping based on validation F1-score.
 
